@@ -1,0 +1,25 @@
+﻿@* @using Animal;
+@using AnimalImplementation;
+
+@inject AnimalsInterface Animal
+
+@{
+	var Data = Animal.GetAnimalsList();
+	var Data1 = Animal.GetAnimalSounds();
+}
+
+
+<ul>
+	<h1 style="color:aqua"><strong>Animal Names</strong></h1>
+	@foreach (var item in Data)
+	{
+		<li>@item</li>
+	}
+	<h1 style="color:brown"><strong>Animal Sounds</strong></h1>
+	@foreach(var data in Data1)
+	{
+		<li>@data</li>
+	}
+	<h1 style="color:darkorchid"><strong>Time Taken to call the objects</strong></h1>
+	<li>@Animal.timetaken</li>
+</ul> *@

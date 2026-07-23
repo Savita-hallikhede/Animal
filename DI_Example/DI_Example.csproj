@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Animal">
+      <HintPath>..\Animal\bin\Debug\net8.0\Animal.dll</HintPath>
+    </Reference>
+    <Reference Include="AnimalImplementation">
+      <HintPath>..\AnimalImplementation\bin\Debug\net8.0\AnimalImplementation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
